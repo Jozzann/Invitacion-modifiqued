@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Invitación - Adri</title>
+    <style>
+        body {
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background: linear-gradient(135deg, #6135c7, #8b78f8); /* Fondo degradado */
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            margin: 0;
+            color: #333;
+        }
+
+        .invitation-card {
+            background-color: white;
+            padding: 40px;
+            border-radius: 25px;
+            box-shadow: 0 10px 30px rgba(0, 0, 0, 0.2);
+            max-width: 450px;
+            text-align: center;
+            animation: fadeIn 1.5s ease-out;
+            border: 5px solid #6c3bc7;
+        }
+
+        @keyframes fadeIn {
+            0% { opacity: 0; transform: translateY(20px); }
+            100% { opacity: 1; transform: translateY(0); }
+        }
+
+        .icon {
+            font-size: 50px;
+            color: #ff7e5f;
+            margin-bottom: 15px;
+            display: block;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0% { transform: scale(1); }
+            50% { transform: scale(1.05); }
+            100% { transform: scale(1); }
+        }
+
+        h1 {
+            color: #5915d8; /* Naranja oscuro */
+            font-size: 2.2em;
+            margin-bottom: 10px;
+        }
+
+        .message {
+            font-style: italic;
+            margin-bottom: 25px;
+            color: #555;
+            font-size: 1.1em;
+        }
+
+        .details {
+            text-align: left;
+            padding: 15px;
+            border-top: 2px dashed #feb47b;
+            margin-top: 20px;
+        }
+
+        .details strong {
+            display: inline-block;
+            width: 80px;
+            color: #4811a0;
+        }
+
+        .signature {
+            margin-top: 30px;
+            font-size: 0.9em;
+            color: #777;
+        }
+        
+        /* Estilo para los botones (opcional) */
+        .button-group a {
+            display: inline-block;
+            padding: 10px 20px;
+            margin: 10px 5px;
+            border-radius: 5px;
+            text-decoration: none;
+            font-weight: bold;
+            transition: background-color 0.3s;
+        }
+
+        .accept {
+            background-color: #4CAF50; /* Verde */
+            color: white;
+        }
+
+        .reject {
+            background-color: #f44336; /* Rojo */
+            color: white;
+        }
+
+        .accept:hover { background-color: #45a049; }
+        .reject:hover { background-color: #da190b; }
+
+    </style>
+</head>
+<body>
+
+    <div class="invitation-card">
+        <span class="icon">🤔</span>
+        <h1>Te pinta ir a hacer algo que no hicimos antes?</h1>
+        <p class="message">
+            Uhmm ayudame a darle un poco de amor a mi corazón, dame chance a hacer algo lindo creo.
+            <br>
+            Tu tienes algo que hace que mi corazón se sienta feliz, me regalas un poco de tu tiempo?
+        </p>
+
+        <div class="details">
+            <h2>📅 MI INVITACIÓN? jaja</h2>
+            <p><strong>Fecha:</strong> 03/12/25 omg un aniversario?</p>
+            <p><strong>Hora:</strong>apenas termine la clase de la bruja</p>
+            <p><strong>Lugar:</strong> ya tu sabe </p>
+            <p><strong>Detalle:</strong>pos tomida y ojala te guste</p>
+        </div>
+
+        <div class="button-group">
+            <a href="https://wa.me/51977571840?text=Sí%20vamo%20D1%20tengo%20hambre%20igual" class="accept" target="_blank">¡SISAS!</a>
+            <a href="https://wa.me/51977571840?text=Sea%20la%20opción%20que%20sea%20igual%20vamos" class="reject" target="_blank">AHI NOMAS JOVEN</a>
+        </div>
+        
+        <p class="signature">Con mucho sueño, este buen hombre Jossan.</p>
+    </div>
+
+</body>
+</html>
